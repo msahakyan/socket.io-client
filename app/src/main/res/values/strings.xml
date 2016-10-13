@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Socket.IO.client</string>
+    <string name="hint_username">Type username</string>
+    <string name="sign_in">Sign in</string>
+    <string name="toast_back_to_exit">Type again to exit the app</string>
+    <string name="no_connection">No network connection</string>
+    <string name="dialog_connection_title">Connection error</string>
+    <string name="no_data">No data</string>
+    <string name="error_empty_username">Please insert username</string>
+    <string name="ask_server_random_command">Ask server for random command</string>
+    <string name="type_message_here">Type a message here</string>
+    <string name="action_send">Send</string>
+    <string name="user_greetings"><![CDATA[Welcome to the Socket.IO Chat – <b>%1$s</b>]]></string>
+    <string name="message_connected">Connected</string>
+    <string name="message_disconnected">Disconnected</string>
+    <string name="message_connection_error">Connection error</string>
+    <string name="title_generate">Generate random server command</string>
+    <string name="map_view">Map location</string>
+    <string name="options">Options</string>
+    <string name="command_map">Map</string>
+    <string name="command_complete">Complete</string>
+    <string name="command_date">Date</string>
+    <string name="command_rate">Rate</string>
+    <string name="rate_experience">Please rate your experience</string>
+    <string name="incorrect_server_response">Server is not able to handle provided command</string>
+    <string name="selected_value">Selected experience: %1$d</string>
+    <string name="selected_day">Selected day: %1$s</string>
+    <string name="selected_checkmark">Selected checkmark: %1$s</string>
+    <string name="action_disconnected">Disconnected</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_generate"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/title_generate"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item_more"
+        android:icon="@drawable/ic_action_more"
+        android:orderInCategory="101"
+        android:title="@string/options"
+        android:visible="false"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_complete"
+                android:icon="@drawable/ic_action_check"
+                android:title="@string/command_complete"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/action_map"
+                android:icon="@drawable/ic_action_map"
+                android:title="@string/command_map"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/action_date"
+                android:icon="@drawable/ic_action_date"
+                android:title="@string/command_date"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/action_rate"
+                android:icon="@drawable/ic_action_rate"
+                android:title="@string/command_rate"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+
+</menu>

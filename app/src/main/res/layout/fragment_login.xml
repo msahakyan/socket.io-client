@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/fragment_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/margin_size_extra_large"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/socketio_text"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginBottom="@dimen/margin_size_extra_large"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_socketio"/>
+
+    <EditText
+        android:id="@+id/insert_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size_extra_large"
+        android:layout_marginRight="@dimen/margin_size_extra_large"
+        android:layout_marginTop="@dimen/margin_size_extra_large"
+        android:background="@color/transparent_lightest"
+        android:drawableLeft="@drawable/ic_action_account"
+        android:drawableStart="@drawable/ic_action_account"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_username"
+        android:imeOptions="actionGo"
+        android:inputType="textCapSentences"
+        android:lines="1"
+        android:maxLength="15"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lighter_grey"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <Button
+        android:id="@+id/action_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginLeft="@dimen/margin_size_extra_large"
+        android:layout_marginRight="@dimen/margin_size_extra_large"
+        android:layout_marginTop="@dimen/margin_size_extra_large"
+        android:background="@drawable/selector_button"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <include layout="@layout/fragment_base"/>
+
+</LinearLayout>
