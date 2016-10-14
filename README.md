@@ -9,6 +9,21 @@ Simple chat application based on java socket.IO - client (<a href="https://githu
 This is just a simple chat client that communicates with a <b>Socket.IO Node.JS chat server</b>. In the simple scenario client can send and receive messages from the server. Bisides that client can ask to the server for some random command (there are few different types of commands client can receive from the server <i>date | map | checkmark | rate</i>). Regarding to which type of command client has received it makes corresponding parsing and shows loaded results on the recyclerView. After that user can "communicate" with that results selecting one or another value provided by the server. When user selects some result that specific view will be updated and on the same position should appear user's name with corresponding selected value.    
 </p>
 
+# Protocol
+The server implements the following protocol over web sockets:<br/>
+`message: { author: "<nick-name>", message: "<message>" }`<br/> 
+`command: { author: "<nick-name>", command: { type: "", data: {} } }`<br/>
+
+When you send a message event with the following payload:<br/>
+`{ author: "client", message: "hello" }`<br/>
+the server will respond:<br/>
+`{ author: "Mega bot", message: "Hey client, you said "hello", right? }`<br/> 
+
+Commands may have one of the following types:<br/>
+`date` The server will send `type: date` and `data:timestamp`. In response to this command the following buttons on the screen: - Mon, Tue, Wed, Thu, Fri, Sat, Sun should be rendered with the correct starting day.<br/>
+`map` The server will send `type: map` and `data:{ lat:"", lng:""}`. In response to this command, a small map on the screen should be rendered with a marker located at the specified co-ordinates.<br/> 
+`rate` The server will send `type: rate` and `data:[i,j]`, where `0 < i < j <= 5`. In response to this command, a simple `RaitingBar` on the screen should be rendered with a corresponding `j` starts and `i` from them by default are selected.<br/>
+`complete` The server will send `type: complete` and `data: ['Yes','No']`. In response to this command two simple buttons should be rendered on the screen with the corresponding texts "Yes" and "No".<br/>
 
 # Screenshots from the app
 `login fragment`<br/>
