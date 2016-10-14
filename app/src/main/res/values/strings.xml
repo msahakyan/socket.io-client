@@ -27,5 +27,6 @@
     <string name="selected_day">Selected day: %1$s</string>
     <string name="selected_checkmark">Selected checkmark: %1$s</string>
     <string name="action_disconnected">Disconnected</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
 
 </resources>
