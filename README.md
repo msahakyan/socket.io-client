@@ -20,13 +20,13 @@ the server will respond:<br/>
 `{ author: "Mega bot", message: "Hey client, you said "hello", right? }`<br/> 
 
 Commands may have one of the following types:<br/>
-`date` The server will send `type: date` and `data:timestamp`.<br/>
+`date`  The server will send `type: date` and `data:timestamp`.<br/>
 In response to this command the following buttons on the screen: - `Mon, Tue, Wed, Thu, Fri, Sat, Sun` should be rendered with the correct starting day.<br/>
-`map` The server will send `type: map` and `data:{ lat:"", lng:""}`.<br/>
+`map`  The server will send `type: map` and `data:{lat:"", lng:""}`.<br/>
 In response to this command, a small map on the screen should be rendered with a marker located at the specified co-ordinates.<br/> 
-`rate` The server will send `type: rate` and `data:[i,j]`, where `0 < i < j <= 5`.<br/>
+`rate`  The server will send `type: rate` and `data:[i,j]`, where `0 < i < j <= 5`.<br/>
 In response to this command, a simple `RaitingBar` on the screen should be rendered with a corresponding `j` starts and `i` from them by default are selected.<br/>
-`complete` The server will send `type: complete` and `data: ['Yes','No']`.<br/>
+`complete`  The server will send `type: complete` and `data: ['Yes','No']`.<br/>
 In response to this command two simple buttons should be rendered on the screen with the corresponding texts "Yes" and "No".<br/>
 
 # Screenshots from the app
