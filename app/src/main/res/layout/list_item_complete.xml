@@ -11,6 +11,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="@dimen/btn_width_default"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/text_size_smaller"/>
 
     <Button
@@ -18,6 +19,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="@dimen/btn_width_default"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/text_size_smaller"/>
 
 </LinearLayout>
