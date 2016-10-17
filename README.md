@@ -31,7 +31,7 @@ In response to this command two simple buttons should be rendered on the screen 
 
 # Screenshots from the app
 `login fragment`<br/>
-<img src="https://cloud.githubusercontent.com/assets/11542701/19382694/a4f867fc-9201-11e6-875f-8b92c6557712.png" width="240px" height="426px" style="float: left; display:inline; margin: 30px;" alt="main feed page"></img>
+<img src="https://cloud.githubusercontent.com/assets/11542701/19443292/8f3fbec8-948c-11e6-846d-d7edc6809b5c.png" width="240px" height="426px" style="float: left; display:inline; margin: 30px;" alt="main feed page"></img>
 
 `chat fragment`<br/>
 <img src="https://cloud.githubusercontent.com/assets/11542701/19382731/c1f182b2-9201-11e6-9850-e61c4f384d47.png" width="240px" height="426px" style="margin: 30px;" alt="main feed page with loaded similar movies"></img>
